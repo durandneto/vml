@@ -1,0 +1,30 @@
+body
+    #app
+        section
+            header, footer 
+                text-align : center
+                color : $primary-color
+            .row
+                display : flex
+                flex-direction : row
+                flex-wrap : nowrap
+                justify-content : space-between
+                nav 
+                    padding : 0.5em  
+                    width : 280px
+                    background-color : $primary-color
+                    @include radius($primary-color) 
+                    color : $white-color
+                    h2
+                        color : $dark-color
+                    a
+                        text-decoration : none
+                        cursor : pointer
+                    a:hover
+                        color : $aqua-color
+                .column
+                    margin: 0 0.2em
+                    padding: 1em
+                    width: 100%
+                    @include radius($primary-color)
+                    
